@@ -436,6 +436,57 @@
       .subhead { font-size: 1rem; border-bottom-width: 1px; }
       .section-head h2 { font-size: 1.15rem; }
     }
+
+
+
+    /* ===== WHY BACKEND MATTERS — FACTS LIST ===== */
+.facts-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin: 1rem 0 0.6rem 0;
+}
+
+.facts-list li {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e4ebf5;
+  border-left: 4px solid #3b6bcf;
+  border-radius: 1.2rem;
+  padding: 0.95rem 1.3rem 0.95rem 2.6rem;
+  font-size: 0.98rem;
+  color: #2b3550;
+  line-height: 1.55;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.015);
+}
+
+.facts-list li::before {
+  content: "✦";
+  position: absolute;
+  left: 1rem;
+  top: 0.95rem;
+  color: #3b6bcf;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.facts-list li strong {
+  color: #0b1428;
+  font-weight: 600;
+}
+
+@media (max-width: 500px) {
+  .facts-list li {
+    padding: 0.85rem 1.1rem 0.85rem 2.3rem;
+    font-size: 0.92rem;
+    border-radius: 1rem;
+  }
+  .facts-list li::before {
+    left: 0.85rem;
+    font-size: 0.9rem;
+  }
+}
   </style>
 </head>
 <body>
@@ -533,6 +584,10 @@
       
     <p class="plain" style="margin-top:0.9rem;"><strong>We help you get the most out of every resource you have.</strong></p>
 
+   
+
+
+
     <!-- THE PITCH -->
     <div class="section-head">
       <span class="marker"></span>
@@ -540,6 +595,29 @@
     </div>
     <div class="pitch-block">We build your backend systems and connect it to how your business already runs — inventory, finance, and HR systems all in one place working smoothly. </div>
 
+    <!-- WHY BACKEND MATTERS — SELLING POINTS -->
+    <div class="section-head">
+      <span class="marker"></span>
+      <h2>Why Every Business Needs This</h2>
+    </div>
+    <p class="plain">Use these facts when a client hesitates. Every point below is a proven reason businesses invest in a proper backend.</p>
+
+    <ul class="facts-list">
+      <li><strong>Stop losing money to manual errors.</strong> Spreadsheets and disconnected tools cause inventory miscounts, wrong invoices, and payroll mistakes — a backend eliminates them at the source.</li>
+      <li><strong>One source of truth.</strong> Inventory, finance, and HR stop living in separate files. Every number is live and every department sees the same data.</li>
+      <li><strong>Real-time visibility.</strong> Know your stock, cash flow, and staff costs the moment they change — not at the end of the month.</li>
+      <li><strong>Scales with the business.</strong> A proper backend handles 10 orders or 10,000 without breaking. Spreadsheets can't.</li>
+      <li><strong>Cuts operating costs.</strong> Automation replaces hours of manual admin work every week — payroll, invoicing, reordering, reporting.</li>
+      <li><strong>Data-driven decisions.</strong> Dashboards and reports turn raw numbers into clear actions: what to reorder, who to pay, where margins are leaking.</li>
+      <li><strong>Compliance & security built in.</strong> Tax rules, payroll regulations, and data protection are handled correctly — reducing legal and financial risk.</li>
+      <li><strong>Time back for the owner.</strong> No more chasing numbers between systems. Owners and managers get their hours back to focus on growth.</li>
+      <li><strong>Faster onboarding & training.</strong> New staff learn one system instead of five scattered tools.</li>
+      <li><strong>Pays for itself.</strong> Most businesses recover the investment within the first year through saved time, fewer errors, and better cash flow control.</li>
+      <li><strong>Custom-built, not off-the-shelf.</strong> It's tailored to how the business already runs — not the other way around.</li>
+      <li><strong>Works from anywhere.</strong> Cloud-based access means the owner, accountant, and warehouse manager can all work from different locations in real time.</li>
+    </ul>
+
+    <p class="plain" style="margin-top:1rem;"><strong>The bottom line:</strong> A backend isn't a cost — it's the infrastructure that lets a business grow without chaos.</p>
 
 
 
